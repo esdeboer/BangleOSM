@@ -1,0 +1,13 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        ivy {
+            name = "OsmAndBinariesIvy"
+            url = "https://builder.osmand.net/ivy/"
+        }
+    }
+}
+rootProject.name = "BangleOSM"
+include ':app'
